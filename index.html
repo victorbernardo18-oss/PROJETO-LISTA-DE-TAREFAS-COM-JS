@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow • To-Do App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <h1>LISTA DE TAREFAS JS</h1>
+        <p>Organize seu dia com foco.</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <form class="add" id="addForm">
+        <input id="taskInput" type="text" placeholder="Digite uma tarefa e pressione Enter…" autocomplete="off" />
+        <button type="submit" class="btn primary">Adicionar</button>
+      </form>
+
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Buscar tarefa…" />
+        <div class="filters" role="tablist" aria-label="Filtros">
+          <button class="chip active" data-filter="all" type="button">Todas</button>
+          <button class="chip" data-filter="active" type="button">Ativas</button>
+          <button class="chip" data-filter="done" type="button">Concluídas</button>
+        </div>
+      </div>
+
+      <ul class="list" id="taskList" aria-label="Lista de tarefas"></ul>
+
+      <footer class="footer">
+        <span id="stats">0 restantes</span>
+        <button id="clearDone" class="btn ghost" type="button">Limpar concluídas</button>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
