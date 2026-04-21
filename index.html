@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TaskFlow • To-Do App</title>
+  <title>Lista de Tarefas JS</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="scripts.js" defer></script>
 </head>
@@ -11,23 +11,23 @@
   <main class="app">
     <header class="header">
       <div>
-        <h1>LISTA DE TAREFAS JS</h1>
+        <h1>Lista de Tarefas JS</h1>
         <p>Organize seu dia com foco.</p>
       </div>
     </header>
 
     <section class="panel">
       <form class="add" id="addForm">
-        <input id="taskInput" type="text" placeholder="Digite uma tarefa e pressione Enter…" autocomplete="off" />
+        <input id="taskInput" type="text" placeholder="Digite uma tarefa e pressione Enter..." autocomplete="off" />
         <button type="submit" class="btn primary">Adicionar</button>
       </form>
 
       <div class="toolbar">
-        <input id="searchInput" type="search" placeholder="Buscar tarefa…" />
+        <input id="searchInput" type="search" placeholder="Buscar tarefa..." />
         <div class="filters" role="tablist" aria-label="Filtros">
           <button class="chip active" data-filter="all" type="button">Todas</button>
           <button class="chip" data-filter="active" type="button">Ativas</button>
-          <button class="chip" data-filter="done" type="button">Concluídas</button>
+          <button class="chip" data-filter="done" type="button">Concluidas</button>
         </div>
       </div>
 
@@ -35,7 +35,7 @@
 
       <footer class="footer">
         <span id="stats">0 restantes</span>
-        <button id="clearDone" class="btn ghost" type="button">Limpar concluídas</button>
+        <button id="clearDone" class="btn ghost" type="button">Limpar concluidas</button>
       </footer>
     </section>
   </main>
